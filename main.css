@@ -330,7 +330,7 @@ a:hover {
 
 .container10 {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
     overflow: hidden;
 }
@@ -957,13 +957,13 @@ a:hover {
 
 .line2 {
     border: 1px solid;
-    border-image: linear-gradient(to right, #c31432 50%, #111111);
+    border-image: linear-gradient(to right, #c31432, #000 100%);
     /* Change color as needed */
     border-image-slice: 1;
-    width: 70%;
+    width: 80%;
     margin-top: -402px;
     margin-left: 472px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .tabs {
