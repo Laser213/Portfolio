@@ -678,13 +678,14 @@ a:hover {
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
-    transform: translateX(50%);
+    transform: translateX(20%);
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
+    overflow-x: hidden;
 }
 
 .show1 {
