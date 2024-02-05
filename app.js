@@ -105,3 +105,23 @@ function closeModal() {
     // Hide the overlay
     document.getElementById('overlay').style.display = 'none';
 }
+
+document.getElementById("email").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    copyFunction();
+})
+
+function copyFunction () {
+    var copyText = document.getElementById("email");
+
+    var range = document.createRange();
+    range.selectNode(copyText);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+
+    alert("Copied!");
+}

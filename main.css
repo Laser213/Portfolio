@@ -57,7 +57,7 @@ p {
 
 /* NavBar Brand*/
 .bold_text {
-    font-weight: 900;
+    font-weight: 300;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -766,6 +766,12 @@ a:hover {
     justify-content: center;
     align-items: center;
     transition: .5s;
+    -webkit-transform: translate(0%, -50%) rotate(0deg);
+    -moz-transform: translate(0%, -50%) rotate(0deg);
+    transform: translate(0%, -50%) rotate(0deg);
+    -webkit-animation: fade_move_down 3s ease-in-out 2;
+    -moz-animation: fade_move_down 3s ease-in-out 2;
+    animation: fade_move_down 3s ease-in-out 2;
 }
 
 .arrow {
@@ -777,6 +783,54 @@ a:hover {
     transform: rotate(45deg);
     transition: .3s;
     margin: -10px;
+}
+
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform: translate(0, -10px) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: translate(0, 10px) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -10px) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 10px) rotate(0deg);
+        opacity: 0;
+    }
 }
 
 .arrow_container:hover .scroll_down_button,
@@ -1292,6 +1346,7 @@ a:hover {
 .container15 .footer_nav:hover {
     color: #c31432;
     transition: .3s;
+    cursor: pointer;
 }
 
 .m_left_right {
@@ -1301,3 +1356,9 @@ a:hover {
 .position_abs {
     position: absolute;
 }
+
+.card_hover:hover {
+    color: #c31432;
+    cursor: pointer;
+}
+
