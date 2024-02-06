@@ -150,7 +150,7 @@ a {
     font-weight: regular;
     font-family: "Raleway";
     text-decoration: none;
-    color: #b2b2b2;
+    color: #ffffff;
     transition: .3s;
 }
 
@@ -159,7 +159,7 @@ section {
 }
 
 a:hover {
-    color: rgb(255, 255, 255)
+    color: #c31432;
 }
 
 .margin_text {
@@ -349,8 +349,7 @@ a:hover {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    margin: 20px;
-    padding-left: 0px;
+    margin: 10px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -855,10 +854,10 @@ a:hover {
 
 .info_block4 {
     display: flex;
-    width: 350px;
+    width: auto;
     min-width: 200px;
     height: fit-content;
-    padding-top: 2%;
+    padding: 1%;
     padding-bottom: 2%;
     background-color: #111111;
     border: 1px solid #c31432;
@@ -871,15 +870,16 @@ a:hover {
 
 .info_block7 {
     display: flex;
+    position: relative;
     width: fit-content;
     height: fit-content;
     background-color: #111111;
     border: 1px solid #c31432;
     border-radius: 3px;
-    justify-content: center;
     align-items: center;
     box-shadow: 0px 5px 10px 0px #000000;
-    margin: 30px;
+    padding: 4%;
+    flex-direction: column;
 }
 
 .info_block6 {
@@ -1067,7 +1067,6 @@ a:hover {
     float: left;
     width: 70%;
     height: 550px;
-    background-color: #3b1258;
     border-radius: 3px;
     margin: 0px 50px;
     margin-bottom: 100px;
@@ -1360,5 +1359,17 @@ a:hover {
 .card_hover:hover {
     color: #c31432;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
 
+.w_350 {
+    width: 350px;
+}
+
+.padding_3 {
+    padding: 2.5%;
+}
+
+.h_fit {
+    height: fit-content;
+}
