@@ -73,6 +73,14 @@ p {
     font-family: "Inter";
 }
 
+@media (max-width: 800) {
+
+    .bold_text1,
+    .h1 {
+        font-size: 6vw;
+    }
+}
+
 /* h4 used in cards */
 .card_h4 {
     margin-left: 2rem;
@@ -175,7 +183,7 @@ a:hover {
 .div1 {
     background-color: #3b1258;
     height: 300px;
-    width: 400px;
+    max-width: 400px;
     text-align: left;
     border-radius: 3px;
     font-family: "Inter";
@@ -191,14 +199,20 @@ a:hover {
 .div2 {
     background-color: #c31432;
     height: 300px;
-    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
     margin-bottom: 50px;
-    margin-top: 0px;
     text-align: left;
     border-radius: 3px;
     font-family: "Inter";
     color: white;
     padding: 6% 7%;
+}
+
+@media (max-width: 450px) {
+    .div2 {
+        min-width: 100px;
+    }
 }
 
 .div2:hover {
@@ -480,6 +494,18 @@ a:hover {
     right: 0;
 }
 
+@media (max-width: 580px) {
+    .block13, .block8 {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .block11, .block12, .block_100, .thin_block {
+        width: 25px;
+    }
+}
+
 .block10 {
     height: 150px;
     width: 240px;
@@ -550,12 +576,18 @@ a:hover {
 .block3 {
     height: 80px;
     width: 180px;
-    background: linear-gradient(to left, rgb(0, 0, 0), #3b1258);
+    background: linear-gradient(to left, rgb(11, 11, 11), #3b1258);
     grid-row: 2/3;
     grid-column: 1/2;
     border-radius: 3px;
     justify-self: end;
     /*filter: blur(3px);*/
+}
+
+@media (max-width: 1070px) {
+    .block1, .block2, .block3, .block4, .block5 {
+        display: none;
+    }
 }
 
 .block4 {
@@ -711,13 +743,13 @@ a:hover {
 }
 
 .primary_button:hover {
-    background-color: #3b1258;
+    background-color: #c31432;
     color: white;
     transition: 0.3s;
 }
 
 .primary_button:active {
-    background-color: #01243f;
+    background-color: #902e00;
 }
 
 .ghost_button {
@@ -764,23 +796,24 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: .5s;
     -webkit-transform: translate(0%, -50%) rotate(0deg);
     -moz-transform: translate(0%, -50%) rotate(0deg);
     transform: translate(0%, -50%) rotate(0deg);
     -webkit-animation: fade_move_down 3s ease-in-out 2;
     -moz-animation: fade_move_down 3s ease-in-out 2;
-    animation: fade_move_down 3s ease-in-out 2;
+    animation: fade_move_down 3s ease-in-out 2, fade-in 0.5s ease-in-out 6s forwards;
 }
 
 .arrow {
     height: 2vw;
+    min-height: 20px;
     width: 2vw;
+    min-width: 20px;
     border-style: solid;
     border-color: #c31432;
     border-width: 0px 1px 1px 0px;
+    transition: 0.1s;
     transform: rotate(45deg);
-    transition: .3s;
     margin: -10px;
 }
 
@@ -832,11 +865,41 @@ a:hover {
     }
 }
 
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .arrow_container:hover .scroll_down_button,
 .arrow_container:hover .arrow {
     font-weight: bold;
-    border-bottom-width: 3px;
-    border-right-width: 3px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
 }
 
 .info_block {
@@ -957,6 +1020,7 @@ a:hover {
     display: grid;
     max-width: 800px;
     max-height: 420px;
+    min-height: fit-content;
     background-color: #ff4f00;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -1019,6 +1083,12 @@ a:hover {
     margin-top: -402px;
     margin-left: 472px;
     overflow-x: hidden;
+}
+
+@media (max-width: 990px) {
+    .line, .vert_line, line2 {
+        display: none;
+    }
 }
 
 .tabs {
@@ -1123,7 +1193,7 @@ a:hover {
 }
 
 .dark_gradient2 {
-    background: linear-gradient(to bottom, #3b1258, #000000 50%);
+    background: linear-gradient(to bottom, #3b1258, #000000 90%);
 }
 
 .no_top_margin {
