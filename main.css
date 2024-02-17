@@ -1357,6 +1357,12 @@ a:active {
     height: 150px;
 }
 
+@media screen and (max-width: 800px) {
+    .small_size {
+        height: fit-content;
+    }
+}
+
 .top_align {
     align-items: flex-start;
 }
