@@ -73,11 +73,11 @@ p {
     font-family: "Inter";
 }
 
-@media (max-width: 800) {
+@media (max-width: 800px) {
 
     .bold_text1,
-    .h1 {
-        font-size: 6vw;
+    h1 {
+        font-size: 45px;
     }
 }
 
@@ -410,6 +410,12 @@ a:active {
     margin: 100px;
     row-gap: 50px;
     margin-left: 0px;
+}
+
+@media (max-width: 540px) {
+    .container14 {
+        margin-right: 30px;
+    }
 }
 
 .container15 {
@@ -760,7 +766,7 @@ a:active {
 .hidden3 {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(20%);
+    transform: translateY(10%);
     transition: all 1s;
     position: relative;
     overflow-x: hidden;
@@ -866,6 +872,7 @@ a:active {
     -webkit-animation: fade_move_down 3s ease-in-out 2;
     -moz-animation: fade_move_down 3s ease-in-out 2;
     animation: fade_move_down 3s ease-in-out 2, fade-in 0.5s ease-in-out 6s forwards;
+    transition: 0.3s ease-in-out;
 }
 
 .arrow {
@@ -879,6 +886,7 @@ a:active {
     transition: 0.1s;
     transform: rotate(45deg);
     margin: -10px;
+    transition: 0.3s ease-in-out;
 }
 
 @-webkit-keyframes fade_move_down {
@@ -983,7 +991,7 @@ a:active {
     display: flex;
     width: auto;
     min-width: 200px;
-    height: fit-content;
+    max-height: fit-content;
     padding: 1%;
     padding-bottom: 2%;
     background-color: #111111;
@@ -1011,7 +1019,7 @@ a:active {
 
 .info_block6 {
     display: flex;
-    width: 350px;
+    max-width: 350px;
     height: 200px;
     background-color: #111111;
     border: 1px solid #c31432;
@@ -1032,8 +1040,8 @@ a:active {
 
 .info_block5 {
     display: flex;
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    min-height: 300px;
     background-color: #111111;
     border: 1px solid #c31432;
     border-radius: 3px;
@@ -1042,6 +1050,8 @@ a:active {
     box-shadow: 0px 5px 10px 0px #000000;
     margin: auto;
     margin-top: 12%;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .info_block2 {
@@ -1168,6 +1178,22 @@ a:active {
     padding-top: 20px;
 }
 
+@media (max-width: 1200px) {
+    .tabs {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .tabs button.active {
+        border-bottom: solid 2px #c31432;
+        border-left: none !important;
+    }
+
+    .education_background {
+        background: transparent !important;
+    }
+}
+
 .tabs button {
     display: block;
     background-color: inherit;
@@ -1207,6 +1233,35 @@ a:active {
     display: flex;
     padding: 25px;
     transition: width 1s;
+}
+
+@media (max-width: 1000px) {
+    .tabscontent {
+        background: transparent;
+    }
+
+    .experience_background {
+        background: transparent !important;
+    }
+
+    .tabscontent .margin_left_27 {
+        margin-left: 0px;
+    }
+
+    .tabscontent .margin_top_23{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabscontent {
+        flex-direction: column;
+    }
+
+    .tabscontent .info_block4 {
+        margin: 0px;
+        margin-bottom: 30px;
+    }
 }
 
 .thin_block {
@@ -1375,8 +1430,18 @@ a:active {
     margin-left: 10%;
 }
 
+@media (max-width: 800px) {
+    .left_margin {
+        margin-left: 0px;
+    }
+}
+
 .left_margin_2rem {
     margin-left: 2rem;
+}
+
+.right_margin_2rem {
+    margin-right: 2rem;
 }
 
 .float_left {
@@ -1480,7 +1545,8 @@ a:active {
 
 .invisible {
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s ease-in-out;
+
 }
 
 .justify_content_center {
@@ -1521,4 +1587,12 @@ a:active {
 
 .red_gradient {
         background: linear-gradient(to top, #111111 10%, #c31432);
+}
+
+.max_height_250 {
+    max-height: 250px;
+}
+
+.align_stretch {
+    align-items: stretch;
 }
