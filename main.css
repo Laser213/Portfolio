@@ -178,6 +178,10 @@ a:hover {
     color: #c31432;
 }
 
+a:active {
+    color: white;
+}
+
 .margin_text {
     margin-left: 10%;
     margin-right: 60px;
