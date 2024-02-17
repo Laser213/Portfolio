@@ -125,3 +125,13 @@ function copyFunction () {
 
     alert("Copied!");
 }
+
+function navFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        x.classList += " topnav1"
+    } else {
+        x.className = "topnav";
+    }
+} 
