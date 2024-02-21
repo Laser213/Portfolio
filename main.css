@@ -464,7 +464,7 @@ a:active {
     justify-content: center;
     height: auto;
     width: 60%;
-    column-gap: 5%;
+    column-gap: 35%;
     margin: auto;
     margin-top: 3%;
     flex-wrap: wrap;
@@ -1252,6 +1252,16 @@ a:active {
     #Skills.experience_background {
         background: transparent !important;
     }
+
+    .footer_container {
+        column-gap: 15%;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer_container {
+        column-gap: 5%;
+    }
 }
 
 .tabs button {
@@ -1329,6 +1339,10 @@ a:active {
         font-size: 20px;
         margin-left: 15px;
         padding-left: 0px;
+    }
+
+    .footer_container {
+        column-gap: 5%;
     }
 }
 
