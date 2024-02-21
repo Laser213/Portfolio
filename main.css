@@ -888,6 +888,7 @@ a:active {
 
 .ghost_button {
     width: auto;
+    min-width: 130px;
     height: 37px;
     border-radius: 3px;
     text-align: center;
