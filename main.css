@@ -89,6 +89,34 @@ p {
     grid-row: 1/ span 2;
 }
 
+@media (max-width: 768px) {
+    .info_education .card_h4 {
+        margin-top: 10%;
+        width: 80%;
+        margin-right: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    #Skills .info_block7 {
+        padding: 10%;
+        min-width: fit-content;
+    }
+
+    .info_education .card_p2 {
+        margin-bottom: 10%;
+        margin-left: 1.5rem;
+    }
+
+    .info_education .card_p {
+        margin-left: 1.5rem;
+    }
+
+    .info_education {
+        min-height: fit-content;
+        max-height: fit-content !important;
+    }
+}
+
 .card_p {
     color: #ffffff;
     margin-left: 2rem;
@@ -123,7 +151,7 @@ p {
     color: #ffffff;
     margin-top: 10px;
     margin-left: 2rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     font-family: "Inter";
     font-weight: 200;
     font-size: 16px;
@@ -521,6 +549,13 @@ a:active {
 @media (max-width: 580px) {
     .block11, .block12, .block_100, .thin_block {
         width: 25px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .block11 {
+        width: 45px;
     }
 }
 
@@ -1003,10 +1038,27 @@ a:active {
     margin: 30px;
 }
 
+.info_education {
+    display: flex;
+    width: fit-content;
+    min-width: 200px;
+    max-height: fit-content;
+    padding: 1%;
+    padding-bottom: 2%;
+    background-color: #111111;
+    border: 1px solid #c31432;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 0px 5px 10px 0px #000000;
+    margin: 30px;
+    max-height: 275px;
+}
+
 .info_block7 {
     display: flex;
     position: relative;
-    width: fit-content;
+    width: auto;
     height: fit-content;
     background-color: #111111;
     border: 1px solid #c31432;
@@ -1015,6 +1067,7 @@ a:active {
     box-shadow: 0px 5px 10px 0px #000000;
     padding: 4%;
     flex-direction: column;
+    margin: 30px;
 }
 
 .info_block6 {
@@ -1182,14 +1235,21 @@ a:active {
     .tabs {
         flex-direction: row;
         height: auto;
+        width: auto;
     }
 
     .tabs button.active {
         border-bottom: solid 2px #c31432;
         border-left: none !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 
     .education_background {
+        background: transparent !important;
+    }
+
+    #Skills.experience_background {
         background: transparent !important;
     }
 }
@@ -1238,6 +1298,7 @@ a:active {
 @media (max-width: 1000px) {
     .tabscontent {
         background: transparent;
+        height: fit-content;
     }
 
     .experience_background {
@@ -1258,9 +1319,16 @@ a:active {
         flex-direction: column;
     }
 
-    .tabscontent .info_block4 {
+    .tabscontent .info_block4, .info_education, .info_block7 {
         margin: 0px;
         margin-bottom: 30px;
+    }
+
+    .tabs button {
+        margin: 30px 0px;
+        font-size: 20px;
+        margin-left: 15px;
+        padding-left: 0px;
     }
 }
 
@@ -1480,6 +1548,7 @@ a:active {
 
 .image_container2 img {
     transition: .3s;
+    width: 100%;
 }
 
 .no_border {
@@ -1595,4 +1664,24 @@ a:active {
 
 .align_stretch {
     align-items: stretch;
+}
+
+.hskills_position {
+    left: 10%
+}
+
+.cskills_position {
+    left: 25%;
+    top: 30%;
+}
+
+@media (max-width: 1200px) {
+    .hskills_position {
+        left: 0%;
+    }
+
+    .cskills_position {
+        left: 0%;
+        top: 0%;
+    }
 }
