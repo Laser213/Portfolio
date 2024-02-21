@@ -1338,6 +1338,7 @@ a:active {
     .tabscontent {
         background: transparent;
         height: fit-content;
+        min-height: 500px
     }
 
     .experience_background {
