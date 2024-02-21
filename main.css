@@ -99,7 +99,7 @@ p {
 
     #Skills .info_block7 {
         padding: 10%;
-        min-width: fit-content;
+        min-width: 200px;
     }
 
     .info_education .card_p2 {
@@ -114,6 +114,10 @@ p {
     .info_education {
         min-height: fit-content;
         max-height: fit-content !important;
+    }
+
+    .tabscontent {
+        margin: 0px !important;
     }
 }
 
