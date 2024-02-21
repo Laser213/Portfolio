@@ -112,7 +112,7 @@ document.getElementById("email").addEventListener("click", function (event) {
     copyFunction();
 })
 
-function copyFunction () {
+function copyFunction(event) {
     var copyText = document.getElementById("email");
 
     var range = document.createRange();
@@ -124,6 +124,7 @@ function copyFunction () {
     window.getSelection().removeAllRanges();
 
     alert("Copied!");
+    event.stopPropagation();
 }
 
 function navFunction() {
