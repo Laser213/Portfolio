@@ -887,7 +887,7 @@ a:active {
 }
 
 .ghost_button {
-    width: 130px;
+    width: auto;
     height: 37px;
     border-radius: 3px;
     text-align: center;
