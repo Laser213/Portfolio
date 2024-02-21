@@ -866,7 +866,7 @@ a:active {
     border-radius: 3px;
     text-align: center;
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     display: inline-block;
     border: none;
@@ -891,7 +891,7 @@ a:active {
     border-radius: 3px;
     text-align: center;
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: white;
     display: inline-block;
