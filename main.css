@@ -826,7 +826,7 @@ a:active {
     .topnav.responsive li {
         float: none;
         display: block;
-        text-align: left;
+        text-align: right;
         padding-left: 0px;
         padding-top: 10px;
     }
