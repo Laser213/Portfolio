@@ -269,6 +269,11 @@ a:active {
 @media (max-width: 450px) {
     .div2 {
         min-width: 100px;
+        margin: 0px 30px;
+    }
+
+    .div1 {
+        margin: 0px 30px;
     }
 }
 
