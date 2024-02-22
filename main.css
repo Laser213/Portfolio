@@ -659,6 +659,16 @@ a:active {
     /*filter: blur(2px);*/
 }
 
+.block-section {
+    height: 250px;
+    width: 100px;
+    background: linear-gradient(to top, rgb(0, 0, 0) -30%, #3b1258);
+    grid-row: 3/5;
+    grid-column: 4/5;
+    border-radius: 3px;
+    /*filter: blur(2px);*/
+}
+
 .block3 {
     height: 80px;
     width: 180px;
@@ -672,6 +682,14 @@ a:active {
 
 @media (max-width: 1070px) {
     .block1, .block2, .block3, .block4, .block5 {
+        display: none;
+    }
+
+    .container4 img, .block-section{
+        display: none;
+    }
+
+    .container5 img {
         display: none;
     }
 }
