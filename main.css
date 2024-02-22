@@ -335,6 +335,12 @@ a:active {
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    .container1 {
+        padding-top: 50px;
+    }
+}
+
 .container2 {
     display: grid;
     grid-template-columns: auto auto auto;
