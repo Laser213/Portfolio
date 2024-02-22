@@ -464,6 +464,17 @@ a:active {
     padding-top: 4%;
 }
 
+@media (max-width: 768px) {
+    .container13 img {
+        width: 50%;
+    }
+
+    .container_cs2 img {
+        width: 50%;
+        margin-top: 40px !important;
+    }
+}
+
 .container14 {
     display: flex;
     flex-wrap: wrap;
