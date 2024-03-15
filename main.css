@@ -646,17 +646,6 @@ a:active {
     margin-bottom: 70px;
 }
 
-.ellipse {
-    display: inline block;
-    grid-row: 1/4;
-    grid-column: 3;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background: linear-gradient(to right, rgb(16, 6, 1) 16%, #c31432);
-    transform: rotate(-30deg) !important;
-}
-
 .block1 {
     height: 300px;
     width: 200px;
@@ -1534,10 +1523,6 @@ a:active {
 .education_background {
     background-image: url(images/education_tab_background.svg);
     background-position: center;
-}
-
-.important_large_font {
-    font-size: larger !important;
 }
 
 .white_font {
